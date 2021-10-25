@@ -1,0 +1,69 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Air_Pressure_Relay
+#
+DEF Air_Pressure_Relay RLY 0 40 Y Y 1 F N
+F0 "RLY" -140 190 60 H V L CNN
+F1 "Air_Pressure_Relay" 30 -200 60 H V C CNN
+F2 "digikey-footprints:Relay_Reed_9007-05-00" 200 200 60 H I L CNN
+F3 "https://cotorelay.com/wp-content/uploads/2014/09/9007_series_reed_relay_datasheet.pdf" 200 300 60 V I L CNN
+F4 "306-1062-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "9007-05-00" 200 500 60 H I L CNN "MPN"
+F6 "Relays" 200 600 60 H I L CNN "Category"
+F7 "Reed Relays" 200 700 60 H I L CNN "Family"
+F8 "https://cotorelay.com/wp-content/uploads/2014/09/9007_series_reed_relay_datasheet.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/coto-technology/9007-05-00/306-1062-ND/301696" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "RELAY REED SPST 500MA 5V" 200 1000 60 H I L CNN "Description"
+F11 "Coto Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A -50 -75 25 901 -901 0 1 0 N -50 -50 -50 -100
+A -50 -25 25 901 -901 0 1 0 N -50 0 -50 -50
+A -50 25 25 901 -901 0 1 0 N -50 50 -50 0
+A -50 75 25 901 -901 0 1 0 N -50 100 -50 50
+S -150 150 200 -150 0 1 0 f
+P 2 0 1 0 -150 -100 -50 -100 N
+P 2 0 1 0 -150 100 -50 100 N
+X ~ 1 300 0 100 L 50 50 1 1 N
+X ~ 2 -250 100 100 R 50 50 1 1 P
+X ~ 3 -250 -100 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SSD1708
+#
+DEF SSD1708 D 0 40 Y Y 1 F N
+F0 "D" -50 250 50 H V C CNN
+F1 "SSD1708" 0 -250 50 H V C CNN
+F2 "" 250 250 50 H I C CNN
+F3 "" 250 250 50 H I C CNN
+DRAW
+S -200 200 200 -200 0 1 0 f
+X GND 1 -300 -150 100 R 50 50 1 1 W
+X VCC 2 -300 -50 100 R 50 50 1 1 W
+X SCL 3 -300 50 100 R 50 50 1 1 I
+X SDA 4 -300 150 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Screwterminal
+#
+DEF Screwterminal H 0 40 Y Y 1 F N
+F0 "H" 0 340 50 H V C CNN
+F1 "Screwterminal" 10 -370 50 H V C CNN
+F2 "" 0 340 50 H I C CNN
+F3 "" 0 340 50 H I C CNN
+DRAW
+C -10 0 150 0 1 0 N
+S -350 290 350 -310 0 1 0 f
+P 2 0 1 0 90 110 -110 -110 N
+P 2 0 1 0 100 100 -100 -120 N
+X Vin 1 -450 190 100 R 50 50 1 1 W
+X GND 2 -450 -210 100 R 50 50 1 1 W
+X Vout 3 450 190 100 L 50 50 1 1 w
+X Vout 4 450 -210 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+#End Library
